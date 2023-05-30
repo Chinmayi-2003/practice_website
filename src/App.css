@@ -1,0 +1,80 @@
+#root, html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app{
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/city1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    background-color: whitesmoke;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 10px 10px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    height: 580px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Tangerine', cursive;}
+
+.button{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 200px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: solid 1px blueviolet;
+}
+
+.button span{
+    color: blue;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.button:hover{
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        width: 80%;
+        height: 30%;
+    }
+}
